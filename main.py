@@ -1,9 +1,8 @@
 import streamlit as st
 from PyPDF2 import PdfReader
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_community.vectorstores import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.chat_models import ChatOpenAI
 from langchain.schema import Document
 
 st.set_page_config(page_title="File Q&A with OpenAI", layout="wide")
@@ -94,7 +93,7 @@ if st.session_state.retriever:
 
         if question:
             # Retrieval
-            docs = st.session_state.retriever.get_relevant_documents(question)
+            docs = st.session_state.retriever.invoke(question)
             context = "\n\n".join([d.page_content for d in docs])
             
             prompt = f"Answer the question based on the context below.\n\nContext:\n{context}\n\nQuestion: {question}"

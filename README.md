@@ -1,4 +1,4 @@
-**📚 RAG-Powered File Q&A with Streamlit and LangChain**
+# 📚 RAG-Powered File Q&A with Streamlit and LangChain
 
 A Streamlit app that lets users upload **PDF or text files** and **ask questions** about their content using **LangChain**, **Chroma**, and **OpenAI’s GPT-4o**.  
 The app embeds documents, retrieves relevant text, and generates answers in an interactive chat.
@@ -26,3 +26,32 @@ The app embeds documents, retrieves relevant text, and generates answers in an i
 
 ## ⚙️ Setup
 
+## Running a Streamlit App on Codespaces  
+Follow these steps to launch and view your Streamlit app in GitHub Codespaces:
+1. **Open the terminal** inside your Codespace.
+2. Run the command:  
+   ```bash
+   streamlit run main.py
+   ```  
+ 
+3. After pressing **Enter**, a popup should appear in the bottom-right corner of Codespace editor.  
+   - Click **“Open in Browser”** to view your app.  
+
+   ⚠️ *If you miss the popup:*  
+   - Press **Ctrl + C** in the terminal to stop the app.  
+   - Rerun the command from step 2 — the popup should appear again.
+4. A new browser tab will open, showing the interface of your Streamlit app.
+5. **Make changes to your code** in the Codespace editor.  
+   - Refresh the browser tab to see the updated version of your app.  
+
+## Setting Your API Key in GH Codespaces
+You will receive an individual API Key for class assignments. To prevent accidental exposure online, please follow the steps below to securely insert your key in the terminal.
+1. **Open the terminal** inside your Codespace.
+2. Run the command to temporarily set your API Key for this session:  
+   ```bash
+   export API_KEY="your_actual_API_KEY"
+   ```
+3. If you want to run the Streamlit app and set up the key at the same time, run both commands together:
+   ```bash
+   API_KEY="your_actual_API_KEY" streamlit run your-file-name.py
+   ```
