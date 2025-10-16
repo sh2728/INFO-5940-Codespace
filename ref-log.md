@@ -15,17 +15,16 @@
 
 ---
 
-## 🤖 Generative AI (GenAI) Usage
+## Generative AI (GenAI) Usage
 
 | Usage Area | Tool / Model | Rationale |
 |-------------|---------------|------------|
-| **Documentation development** | ChatGPT (GPT-5) | Employed to assist in drafting and refining the project’s documentation (`README.md` and `ref-log.md`) to ensure clarity, conciseness, and proper academic tone. |
-| **Code modernization** | ChatGPT (GPT-5) | Consulted to update deprecated LangChain imports and methods in compliance with version 0.2+ library changes. |
-| **Debugging support** | ChatGPT (GPT-5) | Utilized to interpret deprecation warnings and suggest appropriate dependency installations and function replacements. |
+| **Documentation development** | ChatGPT | Employed to assist in refining the project’s documentation (`README.md` and `ref-log.md`) to ensure clarity, conciseness, and proper academic tone. |
+| **Debugging support** | ChatGPT | Utilized to interpret deprecation warnings and suggest appropriate dependency installations. |
 
 ---
 
-## 🧠 Summary
+## Summary
 
 All external sources and generative AI tools were used ethically and transparently.  
 Generative AI assistance was limited to **documentation refinement**, **code compatibility updates**, and **debugging guidance**.  

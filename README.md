@@ -5,7 +5,7 @@ The app embeds documents, retrieves relevant text, and generates answers in an i
 
 ---
 
-### Features Overview
+## 1. Features Overview
 
 - **Multi-File Upload:** Supports uploading multiple files in TXT and PDF formats.
 
@@ -17,15 +17,19 @@ The app embeds documents, retrieves relevant text, and generates answers in an i
 
 - **Chat Interface:** Maintains conversation flow and displays history.
 
-### Changes in Configuration 
+---
+
+## 2. Changes in Configuration 
 1. **New File - main.py:** this is the impelmentation of my code for the assignment. 
 
-2. **PyPDF2==3.0.1** is added to ```bash
+2. **PyPDF2==3.0.1** is added to 
+    ```bash
    requirements.txt
    ```  
 
+---
 
-## ⚙️ Setup
+## 3. Setup
 
 ### Setting Your API Key in GH Codespaces
 You will receive an individual API Key for class assignments. To prevent accidental exposure online, please follow the steps below to securely insert your key in the terminal.
@@ -53,8 +57,4 @@ Follow these steps to launch and view your Streamlit app in GitHub Codespaces:
    - Press **Ctrl + C** in the terminal to stop the app.  
    - Rerun the command from step 2 — the popup should appear again.
 4. A new browser tab will open, showing the interface of your Streamlit app.
-5. **Make changes to your code** in the Codespace editor.  
-   - Refresh the browser tab to see the updated version of your app.  
 
-
-   ```
