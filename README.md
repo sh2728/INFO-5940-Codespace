@@ -37,6 +37,7 @@ You will receive an individual API Key for class assignments. To prevent acciden
 2. Run the command to temporarily set your API Key for this session:  
    ```bash
    export API_KEY="your_actual_API_KEY"
+   export OPENAI_API_KEY="your_actual_API_KEY"
    ```
 3. If you want to run the Streamlit app and set up the key at the same time, run both commands together:
    ```bash
